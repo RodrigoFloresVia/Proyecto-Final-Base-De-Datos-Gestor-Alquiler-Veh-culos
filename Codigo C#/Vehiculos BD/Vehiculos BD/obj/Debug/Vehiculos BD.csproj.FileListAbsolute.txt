@@ -1,0 +1,86 @@
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Vehiculos BD.exe.config
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Vehiculos BD.exe
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Vehiculos BD.pdb
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Google.Protobuf.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\MySql.Data.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Buffers.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Memory.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\ZstdSharp.dll
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Google.Protobuf.pdb
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Google.Protobuf.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\MySql.Data.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Buffers.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Memory.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos_BD.Properties.Resources.resources
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.GenerateResource.cache
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.CopyComplete
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.exe
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.pdb
+C:\Users\Rodrigo\source\repos\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos_BD.Form1.resources
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Vehiculos BD.exe.config
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Vehiculos BD.exe
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Vehiculos BD.pdb
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\BouncyCastle.Cryptography.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Google.Protobuf.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Hash.xxHash.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\MySql.Data.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Buffers.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.IO.Pipelines.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Memory.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Numerics.Vectors.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\ZstdSharp.dll
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\BouncyCastle.Cryptography.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Google.Protobuf.pdb
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Google.Protobuf.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\K4os.Hash.xxHash.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\MySql.Data.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Buffers.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.IO.Pipelines.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Memory.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Numerics.Vectors.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.AssemblyReference.cache
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.SuggestedBindingRedirects.cache
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos_BD.Form1.resources
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos_BD.Properties.Resources.resources
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.GenerateResource.cache
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.CoreCompileInputs.cache
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.csproj.CopyComplete
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.exe
+D:\BASE DE DATOS 2\Vehiculos BD\Vehiculos BD\obj\Debug\Vehiculos BD.pdb

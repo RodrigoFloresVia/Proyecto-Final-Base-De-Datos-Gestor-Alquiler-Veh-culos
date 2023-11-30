@@ -1,0 +1,263 @@
+create database GestorAlquilerVehiculos;
+use GestorAlquilerVehiculos;
+-- crear la tabla de personas
+create table Persona (
+    IdPersona int auto_increment primary key,
+    Nombre varchar(50) not null,
+    Apellido varchar(50) not null,
+    Telefono varchar(15),
+    CorreoElectronico varchar(100),
+    Direccion varchar(100)
+);
+-- crear la tabla de clientes
+create table Clientes (
+    IdCliente int auto_increment primary key,
+    IdPersona int,
+    foreign key (IdPersona) references Persona(IdPersona)
+);
+-- cree la tabla de conductores
+create table Conductores (
+    IdConductor int auto_increment primary key,
+    IdPersona int,
+    foreign key (IdPersona) references Persona(IdPersona),
+    LicenciaConducir varchar(20)
+);
+-- crear la tabla de vehiculos
+create table Vehiculos (
+    IdVehiculo int auto_increment primary key,
+    TipoVehiculo varchar(50),
+    Marca varchar(50),
+    Año int,
+    Placa varchar(10),
+    PrecioAlquilerPorDia decimal(10, 2)
+);
+-- crear la tabla de alquileres
+create table Alquileres (
+    IdAlquiler int auto_increment primary key,
+    IdCliente int references Clientes(IdCliente),
+    IdConductor int references Conductores(IdConductor),
+    IdVehiculo int references Vehiculos(IdVehiculo),
+    FechaInicio date,
+    FechaFin date,
+    TotalPagar decimal(10, 2)
+);
+drop table alquileres;
+-- crear la tabla de Mantenimiento de vehiculos
+create table MantenimientoVehiculos (
+    IdMantenimiento int auto_increment primary key,
+    FechaMantenimiento date,
+    TipoMantenimiento varchar(50),
+    Costo decimal(10, 2),
+    IdVehiculo int,
+    foreign key (IdVehiculo) references Vehiculos(IdVehiculo)
+);
+drop table seguros;
+-- crear la tabla de reservas
+create table Reservas (
+    IdReserva int auto_increment primary key,
+    FechaReserva date,
+    FechaInicioAlquiler date,
+    FechaFinAlquiler date,
+    IdVehiculo int,
+    foreign key (IdVehiculo) references Vehiculos(IdVehiculo),
+    IdCliente int,
+    foreign key (IdCliente) references Clientes(IdCliente)
+);
+-- crear la tabla de facturacion
+create table Facturacion (
+    IdFactura int auto_increment primary key,
+    FechaFactura date,
+    Monto decimal(10, 2),
+    EstadoPago varchar(15),
+    IdCliente int,
+    foreign key (IdCliente) references Clientes(IdCliente)
+);
+-- crear la tabla de pagos
+create table Pagos (
+    IdPago int auto_increment primary key,
+    FechaPago date,
+    MontoPagado decimal(10, 2),
+    MetodoPago varchar(50),
+    IdFactura int references Facturacion(IdFactura)
+);
+-- crear la tabla de empleados
+create table Empleados (
+    IdEmpleado int auto_increment primary key,
+    IdPersona int,
+    foreign key (IdPersona) references Persona(IdPersona),
+    Cargo varchar(50)
+);
+-- crear la tabla de seguros
+create table Seguros (
+    NumeroPoliza int auto_increment primary key,
+    CompañiaSeguros varchar(50),
+    Cobertura varchar(50),
+    FechaInicioPoliza date,
+    FechaVencimientoPoliza date,
+    IdVehiculo int,
+    foreign key (IdVehiculo) references Vehiculos(IdVehiculo)
+);
+-- insertamos datos a las tablas
+-- insertamos Personas
+insert into Persona ( Nombre, Apellido, Telefono, CorreoElectronico, Direccion)
+values ( 'Carlos', 'Gutierrez', '7654321', 'carlos.gutierrez@gmail.com', 'Av. Monseñor Rivero'),
+( 'Isabel', 'Lopez', '9876543', 'isabel.lopez@gmail.com', 'Calle Simon Bolivar'),
+( 'Juan', 'Perez','6783458','juan.perez@gmail.com','Calle Warnes'),
+( 'Luis', 'Gonzales', '7682151', 'Luis.Gonzales@gmail.com', 'Av. Cañoto');
+select * from persona;
+-- Insertamos Clientes
+insert into Clientes ( IdPersona)
+values ( 1),
+( 2),
+( 3);
+select * from clientes;
+-- Insertamos Conductores
+insert into Conductores ( IdPersona, LicenciaConducir)
+values ( 4, 'SC789012');
+select * from Conductores;
+-- Insertamos Vehiculos
+insert into Vehiculos ( TipoVehiculo, Marca, Año, Placa, PrecioAlquilerPorDia)
+values ( 'Sedan', 'Toyota', 2022, 'SC-ABC123', 60.00),
+( 'SUV', 'Honda', 2021, 'SC-XYZ789', 70.00);
+select * from Vehiculos;
+-- Insertamos Alquileres
+insert into Alquileres ( IdCliente, IdConductor, IdVehiculo, FechaInicio, FechaFin)
+values ( 1, 1, 2, '2023-01-01', '2023-01-10');
+select * from Alquileres;
+-- Insertamos MantenimientoVehiculo
+insert into MantenimientoVehiculos ( FechaMantenimiento, TipoMantenimiento, Costo, IdVehiculo)
+values ( '2023-03-01', 'Cambio de aceite', 40.00, 1),
+( '2023-04-01', 'Reparación de frenos', 90.00, 2);
+select * from MantenimientoVehiculos;
+-- Insertamos Las Reservas
+insert into Reservas ( FechaReserva, FechaInicioAlquiler, FechaFinAlquiler, IdVehiculo, IdCliente)
+values( '2023-05-01', '2023-06-01', '2023-06-10', 1, 1);
+select* from reservas;
+-- Insertamos Facturacion
+insert into  Facturacion ( FechaFactura, Monto, EstadoPago, IdCliente)
+values( '2023-01-10', 700.00, 'Pagado', 1);
+insert into Facturacion ( FechaFactura, Monto, EstadoPago, IdCliente)
+values( '2023-02-15', 500.00, 'Pendiente', 2);
+insert into Facturacion ( FechaFactura, Monto, EstadoPago, IdCliente)
+values( '2023-02-15', 300.00, 'Pendiente', 3);
+select * from Facturacion;
+-- Insertamos Pagos
+Insert into Pagos ( FechaPago, MontoPagado, MetodoPago, IdFactura)
+values ( '2023-01-10', 630.00, 'Tarjeta de crédito', 1);
+insert into Pagos ( FechaPago, MontoPagado, MetodoPago, IdFactura)
+values ( '2023-01-01', 500.00, 'Targeta de credito', 2);
+select * from Pagos;
+-- Insertamos Seguros
+insert into Seguros ( CompañiaSeguros, Cobertura, FechaInicioPoliza, FechaVencimientoPoliza, IdVehiculo)
+values ( 'BoliviaSeguros', 'Responsabilidad civil', '2023-01-01', '2024-01-01', 1),
+( 'SantaCruzInsurance', 'Todo riesgo', '2023-02-01', '2024-02-01', 2);
+select * from Seguros;
+-- Cree este procedimiento para insertar un nuevo cliente
+delimiter $$
+create procedure InsertarCliente(
+    in p_Nombre varchar(50),
+    in p_Apellido varchar(50),
+    in p_Telefono varchar(15),
+    in p_CorreoElectronico varchar(100),
+    in p_Direccion varchar(100)
+)
+begin
+    insert into Persona(Nombre, Apellido, Telefono, CorreoElectronico, Direccion)
+    values( p_Nombre, p_Apellido, p_Telefono, p_CorreoElectronico, p_Direccion);
+end $$
+call InsertarCliente('Eduardo', 'Ribera', '6438971', 'Eduardo.Ribera@gmail.com', 'Calle Florida');
+select * from Persona;
+-- Cree este procedimiento para calcular el total a pagar por alquiler
+delimiter $$
+DROP PROCEDURE IF EXISTS InsertarCliente;
+create procedure CalcularTotalPagar(
+    in p_IdAlquiler int
+)
+begin
+    declare p_PrecioPorDia decimal(10, 2);
+    declare p_DiasAlquiler int;
+
+    select PrecioAlquilerPorDia into p_PrecioPorDia
+    from Alquileres
+    join Vehiculos on Alquileres.IdVehiculo = Vehiculos.IdVehiculo
+    where Alquileres.IdAlquiler = p_IdAlquiler;
+
+    select DATEDIFF(FechaFin, FechaInicio) into p_DiasAlquiler
+    from Alquileres
+    where IdAlquiler = p_IdAlquiler;
+
+    update Alquileres
+    set TotalPagar = p_PrecioPorDia * p_DiasAlquiler
+    where IdAlquiler = p_IdAlquiler;
+end $$
+call CalcularTotalPagar(1);
+select * from alquileres;
+-- cree esta funcion para calcular el total pagado segun el monto pagado en la tabla pagos
+delimiter $$
+create function CalcularTotalPagado(
+    idCliente int
+) returns decimal(10, 2)
+begin
+    declare totalPagado decimal(10, 2);
+
+    -- Lógica para calcular el total pagado
+    select SUM(MontoPagado) into totalPagado
+    from Pagos
+    where IdCliente = idCliente;
+
+    return totalPagado;
+end $$
+select CalcularTotalPagado(1) as TotalPagado;
+select * from pagos;
+-- cree este Trigger para actualizar el estado de pago en Facturacion después de realizar un pago en la tabla Pagos
+delimiter $$
+create trigger ActualizarEstadoPago
+after insert on Pagos
+for each row
+begin
+    update Facturacion
+    set EstadoPago = 'Pagado'
+    where IdFactura = new.IdFactura;
+end $$
+select * from Facturacion where IdFactura = 2;
+select * from facturacion;
+insert into Pagos ( FechaPago, MontoPagado, MetodoPago, IdFactura)
+values ( '2023-01-01', 500.00, 'Targeta de credito', 2);
+DROP TABLE PAGOS;
+DROP TRIGGER IF EXISTS ActualizarEstadoPago;
+SHOW TRIGGERS;
+SELECT * FROM Pagos WHERE IdFactura = 2;
+-- cree esata vista para ver la información completa de los alquileres
+create view VistaAlquileres as
+select
+    A.IdAlquiler,
+    concat(P.Nombre, ' ', P.Apellido) as NombreCliente,
+    concat(PC.Nombre, ' ', PC.Apellido) as NombreConductor,
+    C.LicenciaConducir,
+    V.TipoVehiculo,
+    V.Marca,
+    V.Año,
+    V.Placa,
+    A.FechaInicio,
+    A.FechaFin,
+    A.TotalPagar
+from Alquileres A
+join Clientes Cl on A.IdCliente = Cl.IdCliente
+join Persona P on Cl.IdPersona = P.IdPersona
+join Conductores C on A.IdConductor = C.IdConductor
+join Persona PC on C.IdPersona = PC.IdPersona
+join Vehiculos V on A.IdVehiculo = V.IdVehiculo;
+select * from VistaAlquileres;
+-- cree esta vista para ver el estado de pagos pendientes
+create view VistaPagosPendientes as
+select 
+    F.IdFactura,
+    P.Nombre as NombreCliente,
+    P.Apellido as ApellidoCliente,
+    F.Monto,
+    F.EstadoPago
+from Facturacion F
+join Clientes C on F.IdCliente = C.IdCliente
+join Persona P on C.IdPersona = P.IdPersona
+where F.EstadoPago = 'Pendiente';
+select * from VistaPagosPendientes;
